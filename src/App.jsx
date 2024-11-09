@@ -1,4 +1,4 @@
-import FenetreModale from "./lessons/1.Créer-une-fenêtre-modale-avec-un-portal/FenetreModale"
+import FenetreModale from "./components/1.Créer-une-fenêtre-modale-avec-un-portal/FenetreModale"
 
 function App() {
   return (
