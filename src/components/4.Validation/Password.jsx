@@ -22,6 +22,11 @@ export default function Passsword({
           })
         }
       />
+      {showValidation.password && (
+        <p className="text-red-400 font-semibold">
+          Votre mot de passe doit contenir au moins un chiffre et 6 caractères !
+        </p>
+      )}
     </>
   );
 }

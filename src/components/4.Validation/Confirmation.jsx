@@ -25,6 +25,11 @@ export default function Confirmation({
           })
         }
       />
+      {showValidation.passwordConfirmation && (
+        <p className="text-red-400 font-semibold">
+          Les mots de passes ne sont pas identiques !
+        </p>
+      )}
     </>
   );
 }

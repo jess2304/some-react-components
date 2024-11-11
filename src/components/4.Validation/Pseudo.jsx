@@ -15,8 +15,15 @@ export default function Pseudo({
         id="userName"
         className="rounded w-full p-1 mt-2"
         value={inputsStates.pseudo}
-        onChange={e => setInputsStates({...inputsStates, pseudo:e.target.value})}
+        onChange={(e) =>
+          setInputsStates({ ...inputsStates, pseudo: e.target.value })
+        }
       />
+      {showValidation.pseudo && (
+        <p className="text-red-400 font-semibold">
+          votre pseudo doit contenir entre 3 et 64 caractères !
+        </p>
+      )}
     </>
   );
 }
